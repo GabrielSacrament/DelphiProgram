@@ -1,0 +1,23 @@
+object DataModule1: TDataModule1
+  Height = 131
+  Width = 348
+  PixelsPerInch = 120
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'Database=estoque_yss_inventory'
+      'User_Name=root'
+      'DriverID=MySQL')
+    LoginPrompt = False
+    Left = 56
+    Top = 32
+  end
+  object FDQuery1: TFDQuery
+    Connection = FDConnection1
+    Left = 144
+    Top = 32
+  end
+  object DataSource1: TDataSource
+    Left = 224
+    Top = 32
+  end
+end
